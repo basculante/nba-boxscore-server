@@ -67,4 +67,4 @@ app.get("/api/daily-games", async (req, res) => {
   }
 });
 
-app.listen(PORT);
+app.listen(process.env.port || PORT);
